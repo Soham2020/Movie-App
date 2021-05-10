@@ -1,64 +1,58 @@
 * {
-    margin: 0;
+	margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
 }
-.navbar {
-    font-size: 18px;
-    background-color: black;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+
+.bg-img {
+  /* The image used */
+  background-image: url("https://webneel.com/wallpaper/sites/default/files/images/08-2018/1-nature-wallpaper-grass-hd.jpg");
+
+  min-height: 400px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
 }
-.main-nav {
-    list-style-type: none;
-    display: none;
+
+/* Position the navbar container inside the image */
+.top-container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
 }
-.nav-links,
-.logo {
-    text-decoration: none;
-    color: azure;
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: none;
 }
-.main-nav li {
-    text-align: center;
-    margin: 15px auto;
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
-.logo{
-    display: inline-block;
-    padding: 8px;
-    font-size: 22px;
-    margin-top: 8px;
-    margin-left: 20px;
-    box-shadow: 5px 5px;
-    border: 1px solid;
-    border-radius: 15px;
+
+.topnav a:hover {
+  background-color: none;
+  color: burlywood;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+
+.container {
+  background-color: black;
+  color: aliceblue;
+  padding: 3rem;
 }
-.main-nav {
-    display: flex;
-    margin-right: 1050px;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.main-nav li {
-    margin: 0;
-}
-.nav-links {
-    margin-left: 40px;
-}
-.logo {
-    margin-top: 0;
-}
-.logo:hover,
-.nav-links:hover{
-    color: aqua;
+.container h2 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
 }
